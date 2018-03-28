@@ -9,8 +9,9 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>WhatIsMyIpApi</RootNamespace>
     <AssemblyName>WhatIsMyIpApi</AssemblyName>
-    <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -30,8 +31,12 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=11.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.11.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Device" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -40,9 +45,23 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Results\ApiResponseBase.cs" />
+    <Compile Include="Results\BlackListCheckResult.cs" />
+    <Compile Include="Results\DetectProxyResult.cs" />
+    <Compile Include="Results\GeoLocationData.cs" />
+    <Compile Include="Results\GetIpAddressResult.cs" />
+    <Compile Include="Results\HostnameLookupResult.cs" />
+    <Compile Include="Results\Ipv4AddressLookupResult.cs" />
+    <Compile Include="Results\Ipv4WhoisLookupResult.cs" />
+    <Compile Include="Results\ServerHeadersCheckResult.cs" />
+    <Compile Include="Results\UserAgentInfoResult.cs" />
     <Compile Include="WhatIsMyIp.cs" />
     <Compile Include="OutputType.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WhatIsMyIpClient.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -1,5 +1,8 @@
 ﻿namespace WhatIsMyIpApi
 {
+    /// <summary>
+    /// Deprecated. Only for use with the deprecated WhatIsMyIp type. Use WhatIsMyIpClient as a client/proxy for calling WhatIsMyIp.com API commands.
+    /// </summary>
     public class OutputType
     {
         private OutputType(string value) => Value = value;

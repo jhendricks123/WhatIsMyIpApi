@@ -4,6 +4,10 @@ using System.Threading.Tasks;
 
 namespace WhatIsMyIpApi
 {
+
+    /// <summary>
+    /// Deprecated. Use WhatIsMyIpClient as a client/proxy for calling WhatIsMyIp.com API commands.
+    /// </summary>
     public static class WhatIsMyIp
     {
         private const string GetIpApiString = "http://api.whatismyip.com/ip.php?key={0}";
