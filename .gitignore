@@ -259,3 +259,5 @@ paket-files/
 # Python Tools for Visual Studio (PTVS)
 __pycache__/
 *.pyc
+/lib/net451
+/WhatIsMyIpApi.1.1.0.nuspec

@@ -1,4 +1,5 @@
-﻿using System.Device.Location;
+﻿using System;
+using System.Device.Location;
 
 namespace WhatIsMyIpApi.Results
 {
